@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <!-- 안드로이드 -->
+    <meta name="viewport" content="user-scalable=0" />
+    <!-- 아이폰 -->
+
+    <title>input_infomation</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- 폰트 불러오기 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <!-- 아이콘 -->
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon" sizes="180x180">
+
+    <link rel="stylesheet" href="css/input_info.css">
+    <script src="js/input_info_today.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="info">
+            <form class="form1">
+                <div class="name1">
+                    <label for='full_name'>
+                        <h2>이름: </h2>
+                    </label>
+                    <input type="text" id="full_name" name="full-name" value="소소한" size="10" class="text1" />
+                </div>
+                <div class="birth">
+                    <label for="birth_month">
+                        <h2>생년월일: </h2>
+                    </label>
+                    <input type="text" id="birth_year" name="birth_year" value="2003" size="4" class="text1" />
+                    <select name="Month" id="birth_month" class="text1">
+                        <option value="1">
+                            <h2>1월</h2>
+                        </option>
+                        <option value="2">
+                            <h2>2월</h2>
+                        </option>
+                        <option value="3">
+                            <h2>3월</h2>
+                        </option>
+                        <option value="4">
+                            <h2>4월</h2>
+                        </option>
+                        <option value="5">
+                            <h2>5월</h2>
+                        </option>
+                        <option value="6">
+                            <h2>6월</h2>
+                        </option>
+                        <option value="7">
+                            <h2>7월</h2>
+                        </option>
+                        <option value="8">
+                            <h2>8월</h2>
+                        </option>
+                        <option value="9">
+                            <h2>9월</h2>
+                        </option>
+                        <option value="10">
+                            <h2>10월</h2>
+                        </option>
+                        <option value="11">
+                            <h2>11월</h2>
+                        </option>
+                        <option value="12">
+                            <h2>12월</h2>
+                        </option>
+                    </select>
+
+                    <select name="day" id="birth_days" class="text1">
+                        <option value="1">
+                            <h2>1일</h2>
+                        </option>
+                        <option value="2">
+                            <h2>2일</h2>
+                        </option>
+                        <option value="3">
+                            <h2>3일</h2>
+                        </option>
+                        <option value="4">
+                            <h2>4일</h2>
+                        </option>
+                        <option value="5">
+                            <h2>5일</h2>
+                        </option>
+                        <option value="6">
+                            <h2>6일</h2>
+                        </option>
+                        <option value="7">
+                            <h2>7일</h2>
+                        </option>
+                        <option value="8">
+                            <h2>8일</h2>
+                        </option>
+                        <option value="9">
+                            <h2>9일</h2>
+                        </option>
+                        <option value="10">
+                            <h2>10일</h2>
+                        </option>
+                        <option value="11">
+                            <h2>11일</h2>
+                        </option>
+                        <option value="12">
+                            <h2>12일</h2>
+                        </option>
+                        <option value="13">
+                            <h2>13일</h2>
+                        </option>
+                        <option value="14">
+                            <h2>14일</h2>
+                        </option>
+                        <option value="15">
+                            <h2>15일</h2>
+                        </option>
+                        <option value="16">
+                            <h2>16일</h2>
+                        </option>
+                        <option value="17">
+                            <h2>17일</h2>
+                        </option>
+                        <option value="18">
+                            <h2>18일</h2>
+                        </option>
+                        <option value="19">
+                            <h2>19일</h2>
+                        </option>
+                        <option value="20">
+                            <h2>20일</h2>
+                        </option>
+                        <option value="21">
+                            <h2>21일</h2>
+                        </option>
+                        <option value="22">
+                            <h2>22일</h2>
+                        </option>
+                        <option value="23">
+                            <h2>23일</h2>
+                        </option>
+                        <option value="24">
+                            <h2>24일</h2>
+                        </option>
+                        <option value="25">
+                            <h2>25일</h2>
+                        </option>
+                        <option value="26">
+                            <h2>26일</h2>
+                        </option>
+                        <option value="27">
+                            <h2>27일</h2>
+                        </option>
+                        <option value="28">
+                            <h2>28일</h2>
+                        </option>
+                        <option value="29">
+                            <h2>29일</h2>
+                        </option>
+                        <option value="30">
+                            <h2>30일</h2>
+                        </option>
+                        <option value="31">
+                            <h2>31일</h2>
+                        </option>
+                    </select>
+                </div>
+                <div class="gender">
+                    <label id="gender_type_1" class="radio_label">
+                        <h2>남: </h2>
+                    </label>
+                    <input name="gender_type" type="radio" value="남" class="text1" style="width: 30px; height: 30px;"/>&nbsp;&nbsp;&nbsp;
+
+                    <label id="gender_type_2" class="radio_label">
+                        <h2>여: </h2>
+                    </label>
+                    <input name="gender_type" type="radio" value="여" checked="checked" class="text1" style="width: 30px; height: 30px;" />
+                </div>
+                <button class="btn_submit" onclick="userInfo();" type="button">
+                    <a href="today_loading.html">
+                        <h2>제출</h2>
+                    </a>
+                </button>
+            </form>
+
+        </div>
+        <div class="explain">
+            <h5>생년월일, 성별, 이름을 적고 제출하게.</h5>
+            <img class="tallk" src="image/talk.png">
+        </div>
+    </div>
+</body>
+
+</html>
