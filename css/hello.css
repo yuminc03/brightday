@@ -13,21 +13,26 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url("../image/background.jpg");
-    background-repeat: no-repeat; /* background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다. */
-    background-size: cover; /* 사이즈가 container에 맞지 않아도 꽉 차도록 채운다. */
-    background-position: center; /* background-image가 컨테이너에 가운데로 오도록 한다. */
-    
-    overflow-x: hidden; /*가로 스크롤바 없애기*/
-    overflow-y: hidden;/*세로 스크롤바 없애기*/
+    background-repeat: no-repeat;
+    /* background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다. */
+    background-size: cover;
+    /* 사이즈가 container에 맞지 않아도 꽉 차도록 채운다. */
+    background-position: center;
+    /* background-image가 컨테이너에 가운데로 오도록 한다. */
 
-     /* 드래그 방지 */
-     -ms-user-select: none; 
-     -moz-user-select: -moz-none;
-     -khtml-user-select: none;
-     -webkit-user-select: none;
-     user-select: none;
-    
-   
+    overflow-x: hidden;
+    /*가로 스크롤바 없애기*/
+    overflow-y: hidden;
+    /*세로 스크롤바 없애기*/
+
+    /* 드래그 방지 */
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+
 }
 
 .container {
@@ -40,17 +45,18 @@ body {
 
 .desk {
     /* border: 1px solid red; */
-    background-color: rgb(254, 255, 182);
+    /* background-color: rgb(254, 255, 182); */
+    background-color: rgba(254, 255, 182, 0.877);
     text-align: center;
-    position: fixed;
-    top: 1%;
+    position: absolute;
+    top: 5%;
     left: 50%;
-    width: 600px;
-    height: 300px;
-    margin-left: -300px;
-    margin-right: -150px;
+    width: 500px;
+    height: 380px;
+    margin-left: -250px;
+    margin-right: -175px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     z-index: 2;
 }
@@ -62,7 +68,7 @@ body {
     align-items: center;
     text-align: center;
     position: fixed;
-    bottom: 16.5%;
+    bottom: 15%;
     z-index: 1;
 }
 
@@ -76,13 +82,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: fixed;
-    bottom: 8%;
+    position: absolute;
+    bottom: 5%;
     z-index: 3;
 }
 
 .char>img {
-    width: 80%;
+    width: 70%;
 }
 
 h3 {
@@ -105,7 +111,7 @@ h2 {
     margin-right: -100px;
 }
 
-.buttons > button {
+.buttons>button {
     background-color: #fff;
     width: 150px;
     height: 80px;
@@ -145,6 +151,7 @@ h2 {
     -o-animation: fadein 3s;
     /* Opera */
 }
+
 .fadein_2 {
     /* border: 1px solid red; */
     display: block;
@@ -153,7 +160,7 @@ h2 {
     justify-content: center;
     align-items: center;
     position: relative;
-    
+
     margin: 10px;
     padding: 10px;
     animation: fadein 9s;
@@ -172,7 +179,7 @@ h2 {
         overflow-x: hidden;
     }
 
-    .container {    
+    .container {
         width: 100%;
         border-bottom: 100px;
         top: 1000px;
@@ -185,7 +192,7 @@ h2 {
         margin-right: -125px;
     }
 
-    .buttons > button {
+    .buttons>button {
         width: 120px;
         height: 60px;
         margin: 9px;
@@ -202,52 +209,52 @@ h2 {
     h3 {
         font-size: 20px;
     }
-    
+
 
 }
 
-    @keyframes fadein {
-        from {
-            opacity: 0;
-        }
-    
-        to {
-            opacity: 1;
-        }
+@keyframes fadein {
+    from {
+        opacity: 0;
     }
-    
-    @-moz-keyframes fadein {
-    
-        /* Firefox */
-        from {
-            opacity: 0;
-        }
-    
-        to {
-            opacity: 1;
-        }
+
+    to {
+        opacity: 1;
     }
-    
-    @-webkit-keyframes fadein {
-    
-        /* Safari and Chrome */
-        from {
-            opacity: 0;
-        }
-    
-        to {
-            opacity: 1;
-        }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
     }
-    
-    @-o-keyframes fadein {
-    
-        /* Opera */
-        from {
-            opacity: 0;
-        }
-    
-        to {
-            opacity: 1;
-        }
+
+    to {
+        opacity: 1;
     }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

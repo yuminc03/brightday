@@ -28,16 +28,13 @@ body {
     /*가로 스크롤바 없애기*/
     overflow-y: hidden;
     /*세로 스크롤바 없애기*/
-    
+
     /* 드래그 방지 */
-    -ms-user-select: none; 
+    -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-
-
-
 }
 
 .container {
@@ -50,15 +47,16 @@ body {
 
 .desk {
     /* border: 1px solid red; */
-    background-color: rgb(254, 255, 182);
+    /* background-color: rgb(254, 255, 182); */
+    background-color: rgba(254, 255, 182, 0.877);
     text-align: center;
-    position: fixed;
-    top: 1%;
+    position: absolute;
+    top: 5%;
     left: 50%;
-    width: 600px;
-    height: 300px;
-    margin-left: -300px;
-    margin-right: -150px;
+    width: 500px;
+    height: 380px;
+    margin-left: -250px;
+    margin-right: -175px;
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -72,7 +70,7 @@ body {
     align-items: center;
     text-align: center;
     position: fixed;
-    bottom: 16.5%;
+    bottom: 15%;
     z-index: 1;
 }
 
@@ -86,24 +84,28 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: fixed;
-    bottom: 8%;
+    position: absolute;
+    bottom: 5%;
     z-index: 3;
 }
 
 .char>img {
-    width: 80%;
+    width: 70%;
 }
 
-.desk > h3 {
+.desk>h3 {
     font-size: 38px;
 }
 
-h2 {
+h3 {
     font-size: 40px;
 }
 
-.buttons > .today > a > h2{
+h2 {
+    font-size: 45px;
+}
+
+.buttons>.today>a>h2 {
     font-size: 40px;
 }
 
@@ -111,7 +113,7 @@ h2 {
     /* border: 1px solid red; */
     position: absolute;
     display: inline-block;
-    top: 24%;
+    top: 40%;
     left: 50%;
     width: 400px;
     height: 200px;
@@ -119,12 +121,12 @@ h2 {
     margin-right: -100px;
 }
 
-.buttons > button {
+.buttons>button {
     background-color: #fff;
-    width: 160px;
+    width: 150px;
     height: 80px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
