@@ -9,26 +9,31 @@
 
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url("../image/background2.jpg");
-    background-repeat: no-repeat; /* background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다. */
-    background-size: 100%; /* 사이즈가 container에 맞지 않아도 꽉 차도록 채운다. */
-    background-position: center; /* background-image가 컨테이너에 가운데로 오도록 한다. */
+    background-repeat: no-repeat;
+    /* background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다. */
+    background-size: cover;
+    /* 사이즈가 container에 맞지 않아도 꽉 차도록 채운다. */
+    background-position: center;
+    /* background-image가 컨테이너에 가운데로 오도록 한다. */
 
-    overflow-x: hidden;/*가로 스크롤바 없애기*/
-    overflow-y: hidden;/*세로 스크롤바 없애기*/
+    overflow-x: hidden;
+    /*가로 스크롤바 없애기*/
+    overflow-y: hidden;
+    /*세로 스크롤바 없애기*/
 
-    
+
     /* 드래그 방지 */
-    -ms-user-select: none; 
+    -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-  
+
 }
 
-.container{
+.container {
     /* border: 1px solid red; */
     display: block;
     align-items: center;
@@ -37,74 +42,119 @@ body {
     text-align: center;
     height: 650px;
 }
-.form1{
+
+.form1 {
     background-color: rgba(255, 255, 255, 0.728);
-    margin: 80px;
+    /* margin: 20px; */
     padding: 10px;
-    width: 50%;
-    height: 60%;
-    left: 20%;
+    /* width: 50%;
+    height: 60%; */
+    width: 960px;
+    height: 648px;
+    /* left: 20%; */
     display: inline-block;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: relative;
     text-align: center;
     box-sizing: border-box;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.name{
+
+.name {
     /* border: 1px solid red; */
-    display:block;
+    display: block;
     text-align: center;
     padding: 10px;
     margin: 20px;
 }
+
+.btns {
+    /* border: 1px solid red; */
+    position: absolute;
+    display: inline-block;
+    top: 95%;
+    left: 50%;
+    width: 600px;
+    height: 200px;
+    margin-left: -300px;
+    margin-right: -100px;
+}
+
 .btn_yes {
-    position: fixed;
+    /* position: fixed; */
     width: 180px;
     height: 60px;
     text-align: center;
+    font-size: 25px;
     border: 2px solid black;
     border-radius: 20px;
-    bottom: 50px;
-    left: 550px;
+    /* bottom: 20%;
+    right: 37%; */
+    padding: 10px;
+    transition: 0.6s;
+
+    background-color: rgba(4, 104, 117, 0.707);
+    border: 1px solid rgba(4, 104, 117, 0);
+    margin: 10px 10px 10px;
+    margin: 30px;
 }
 
- .btn_no{
-    position: fixed;
+.btn_no {
+    /* position: fixed; */
     width: 180px;
     height: 60px;
     text-align: center;
+    font-size: 25px;
     border: 2px solid black;
     border-radius: 20px;
-    bottom: 50px;
-    left: 800px;
+    /* bottom: 20%;
+    left: 37%; */
+    padding: 10px;
+    transition: 0.6s;
 
+    background-color: rgba(117, 36, 4, 0.599);
+    border: 1px solid rgba(117, 36, 4, 0);
+    margin: 10px 10px 10px;
+    margin: 30px;
 }
-.btn_yes{
+.btn_yes:hover{
+    opacity: 30%;
+}
+
+.btn_no:hover{
+    opacity: 30%;
+}
+
+/* .btn_yes {
     background-color: rgba(4, 104, 117, 0.707);
     border: 1px solid rgba(4, 104, 117, 0);
     margin: 10px 10px 10px;
 }
-.btn_no{
+
+.btn_no {
     background-color: rgba(117, 36, 4, 0.599);
     border: 1px solid rgba(117, 36, 4, 0);
     margin: 10px 10px 10px;
-}
-h1{
+} */
+
+h1 {
     font-size: 80px;
     color: black;
 }
-h2{
+
+h2 {
     font-size: 40px;
     color: black;
-    margin: 10px;  
+    margin: 10px;
 }
-h3{
+
+h3 {
     font-size: 30px;
     color: black;
 }
-#resultStr{
+
+#resultStr {
     font-size: 80px;
     color: black;
     font-weight: bold;
@@ -113,20 +163,22 @@ h3{
 @media screen and (max-width: 780px) {
 
     /* 모바일 수평 스크롤 금지 */
-    html, body {
+    html,
+    body {
         max-width: 100%;
         height: 100vh;
         overflow-x: hidden;
     }
-    
+
     /* .container {
         width: 100%;
     } */
-    
 
-    .form1{
+
+    .form1 {
         padding: 10px;
         width: 800%;
-        height: 1000%;       }
+        height: 1000%;
+    }
 
 }
