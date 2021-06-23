@@ -10,7 +10,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background-image: url("../image/background2.jpg");
+    background-image: url("../image/result.png");
     background-repeat: no-repeat;
     /* background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다. */
     background-size: cover;
@@ -170,15 +170,15 @@ h3 {
         overflow-x: hidden;
     }
 
-    /* .container {
+    .container {
         width: 100%;
-    } */
+    }
 
 
     .form1 {
         padding: 10px;
-        width: 800%;
-        height: 1000%;
+        width: 600px;
+        height: 800px;
     }
 
 }

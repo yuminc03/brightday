@@ -12,23 +12,26 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url("../image/background.jpg");
-    background-repeat: no-repeat; /* background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다. */
-    background-size: cover; /* 사이즈가 container에 맞지 않아도 꽉 차도록 채운다. */
-    background-position: none; /* background-image가 컨테이너에 가운데로 오도록 한다. */
+    background-repeat: no-repeat;
+    /* background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다. */
+    background-size: cover;
+    /* 사이즈가 container에 맞지 않아도 꽉 차도록 채운다. */
+    background-position: none;
+    /* background-image가 컨테이너에 가운데로 오도록 한다. */
 
-    overflow-x: hidden;/*가로 스크롤바 없애기*/
-    overflow-y: hidden;/*세로 스크롤바 없애기*/
+    overflow-x: hidden;
+    /*가로 스크롤바 없애기*/
+    overflow-y: hidden;
+    /*세로 스크롤바 없애기*/
 
     /* 드래그 방지 */
-    -ms-user-select: none; 
+    -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
 
 }
-
-/*  */
 
 .container {
     /* border: 1px solid red; */
@@ -50,17 +53,15 @@ body {
     /* border: 1px solid red; */
     text-align: center;
     position: absolute;
-    top: 83%;
-    left: 49%;
+    top: 2%;
+    left: 50%;
     width: 800px;
-    height: 50px;
+    height: 200px;
     margin-left: -400px;
-    margin-right: -25px;
+    margin-right: -100px;
 }
 
-
-
-.rabbit{
+.rabbit {
     background: url("../image/rabbit.png");
     width: 169px;
     height: 348px;
@@ -69,7 +70,7 @@ body {
     left: 30%;
 }
 
-.pig{
+.pig {
     background: url("../image/pig.png");
     width: 169px;
     height: 348px;
@@ -78,9 +79,7 @@ body {
     right: 20%;
 }
 
-
-
-.mouse{
+.mouse {
     background: url("../image/mouse.png");
     width: 169px;
     height: 348px;
@@ -101,8 +100,7 @@ body {
     transform: translateY(-40px);
 }
 
-
-
+/* 
 h1 {
     font-size: 100px;
     color: rgb(231, 231, 221);
@@ -127,7 +125,7 @@ h1 {
                     0 5px 10px rgba(0,0,0,.2),
                     0 10px 10px rgba(0,0,0,.2),
                     0 20px 20px rgba(0,0,0,.3);
-    }
+    } */
 
 h2 {
     font-size: 40px;
@@ -214,7 +212,7 @@ h3 {
     transform: scale(1);
 }
 
-.door3{
+.door3 {
     /* border: 1px solid red; */
     background: url("../image/door2.png");
     background-repeat: no-repeat;
@@ -289,59 +287,65 @@ h3 {
 @media screen and (max-width: 780px) {
 
     /* 모바일 수평 스크롤 금지 */
-    html, body {
+    html,
+    body {
         max-width: 100%;
         height: 100vh;
         overflow-x: hidden;
-        position: fixed;
+        /* position: fixed; */
     }
-    .hidden{
+
+    .hidden {
         display: none;
     }
 
+    .name {
+        top: 3%;
+        width: 400px;
+        height: 150px;
+        margin-left: -200;
+        margin-right: -75px;
+    }
 
-    
-    .container {    
+    .container {
         width: 100%;
         border-bottom: 100px;
         top: 1000px;
     }
-    .perspective  {
+
+    .perspective {
         bottom: 12%;
-        max-width:70%;
-        max-height:auto;
+        max-width: 70%;
+        max-height: auto;
     }
 
-    .span{
+    .span {
         top: -10px;
         width: 80px;
         height: 80px;
 
     }
 
-    .door1{
+    .door1 {
         width: 100px;
         top: 11%;
         width: 60%;
         height: 100%;
-        
+
     }
-    .door2{
+
+    .door2 {
         width: 100px;
         top: 11%;
         width: 60%;
         height: 100%;
     }
 
-    .door3{
+    .door3 {
         width: 100px;
         top: 11%;
         width: 60%;
         height: 100%;
     }
 
-    .name{
-        top: 75%;
-    }
 }
-
