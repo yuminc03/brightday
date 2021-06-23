@@ -300,11 +300,12 @@ h3 {
     }
 
     .name {
-        top: 3%;
+        /* top: 3%;
         width: 400px;
         height: 150px;
-        margin-left: -200;
-        margin-right: -75px;
+        margin-left: -200px;
+        margin-right: -75px; */
+        display: none;
     }
 
     .container {
